@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task one</title>
+  <link rel="stylesheet" href="./stylesheet/style.css">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/favicon.webp" type="image/x-icon" sizes="32x32">
+
+  <!-- google icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primaryColor: '#F9F8F2',
+            secondaryColor: '#0F866C',
+            btnHoverColor: '#D4E300',
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+<body>
+
+  <!-- header element -->
+  <header>
+
+    <!-- nav element -->
+    <nav>
+      <div id="navbar" class="nav-container navbar px-[30px] md:px-[120px] py-[10px]">
+        <a href="">
+          <img src="./images/brandLogo.png" class="w-[100px] md:w-[200px] cursor-pointer" alt="brandLogo" srcset="">
+        </a>
+        <div id="lang" class="flex flex-row items-center gap-1 cursor-pointer font-medium hover:text-secondaryColor">
+          <span class="material-symbols-rounded">
+            language
+          </span>
+          <span>English</span>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+   
+  
+  <!-- main element -->
+  <main>
+
+    <div id="langPopup" class="flex flex-row items-center justify-center ease-in-out duration-300 fixed h-[100dvh] w-full z-10 hidden">
+      
+      <div class="langPopupExit relative w-[100%] h-[100%] bg-[#000000] opacity-75">
+        
+      </div>
+
+      <div class="absolute bg-[#FFFFFF] w-fit mx-auto p-10 rounded-xl">
+        <div class="flex flex-row items-center justify-between">
+          <span></span>
+          <span class="material-symbols-rounded langPopupExit cursor-pointer">close</span>
+        </div>
+
+        <p class="font-bold text-center mb-5 text-2xl">Choose language</p>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-y-3 gap-x-16">
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Dansk</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Deutsch</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Español</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Suomi</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Français</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Indonesian</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Italiano</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Magyar</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Nederlands</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Norsk</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Polski</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Português</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Pусский</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Svenska</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Türkçe</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Українська</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Tiếng Việt</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">العربية</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">ภาษาไทย</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">日本語</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">한국어</p>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+
+    <!-- hero section -->
+    <section>
+
+      <div class="hero-container bg-gradient-to-b from-[#E1D9CA] to-[#F6AA80] md:h-[100dvh] w-[100%]">
+  
+        <img src="./images/homepage-pingzhu-hero-bg-opt-v2-3ce3022343c7ad918545a6a2e01f36b5.avif" class="relative w-[100%] object-cover h-[70dvh] md:h-[100dvh]" alt="">
+        
+        <!-- hero text container -->
+        <div class="flex flex-col gap-3 md:gap-5 py-[100px] absolute">
+          
+          <h1 class="font-black text-3xl md:text-7xl subHeading">The VPN that just works</h1>
+          <h2 class="text-center font-bold text-sm md:text-xl subHeading">Go further with the #1 trusted leader in VPN</h2>
+          <a href="" class="py-4 px-[50px] font-bold bg-secondaryColor text-[#FFFFFF] hover:bg-btnHoverColor hover:text-[#000000] ease-in-out duration-300 rounded-full mx-auto">
+            Get ExpressVPN
+          </a>
+          <h3 class="text-center subHeading text-[10px]">30-DAY MONEY-BACK QUARANTEE</h3>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Secure access section -->
+    <section class="mt-[30px] md:mt-[50px]">
+
+      <div class="flex flex-col md:flex-row items-center justify-center gap-[10px] md:gap-[50px] p-5">
+
+        <img src="./images/ultra-fast-global-connection-53ec70975ebbac0926c8c5677b757a82.avif" class="w-[70%] md:w-[30%]" alt="mainImg1" srcset="">
+
+        <div class="flex flex-col items-center md:items-start gap-3">
+
+          <h3 class="font-bold text-3xl text-center md:text-left">Secure access, <br>worldwide</h3>
+
+          <p class="font-medium text-center md:text-left">Connect reliably from anywhere, to anywhere. Our network of <br class="hidden md:flex"> high speed servers across 94 countries puts you in control.</p>
+
+          <input type="button" value="Get ExpressVPN" class="py-3 px-[30px] font-bold bg-secondaryColor text-[#FFFFFF] hover:bg-btnHoverColor hover:text-[#000000] ease-in-out duration-300 rounded-3xl w-fit cursor-pointer">
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- safer internet section -->
+    <section class="">
+
+      <div class="flex flex-col-reverse md:flex-row items-center justify-center gap-[10px] md:gap-[50px] p-5">
+
+        <div class="flex flex-col items-center md:items-start gap-3">
+          
+          <h3 class="font-bold text-3xl text-center md:text-left">One click to a safer, <br>internet</h3>
+          
+          <p class="font-medium text-center md:text-left">
+            Going online doesn't have to mean being exposed. Whether 
+            <br class="hidden md:flex"> you're shopping from your desk or just connecting at a cafe, 
+            <br class="hidden md:flex"> keep your personal information more private and more secure
+          </p>
+          
+        </div>
+
+        <img src="./images/mainImg2.avif" class="w-[70%] md:w-[30%]" alt="mainImg1">
+
+      </div>
+
+    </section>
+
+    <!-- Secure access section -->
+    <section class="mt-[20px] md:mt-[50px]">
+
+      <div class="flex flex-col md:flex-row items-center justify-center gap-[10px] md:gap-[50px] p-5">
+
+        <img src="./images/mainImg1.avif" class=" md:w-[30%]" alt="mainImg1" srcset="">
+
+        <div class="flex flex-col items-center md:items-start gap-3">
+
+          <h3 class="font-bold text-3xl text-center md:text-left">Use ExpressVPN on <br> every device</h3>
+
+          <p class="font-medium text-center md:text-left">Phone, tablet, computer, router-no matter where you are or <br class="hidden md:flex"> what devices you're using, a single ExpressVPN subscription <br class="hidden md:flex">has got you covered.</p>
+
+          <div class="flex flex-row items-center gap-3">
+            <img src="./icons/icons8-windows-30.png" class="w-[40px] rounded bg-[#F2F3F4] p-2" alt="windows logo">
+            <img src="./icons/icons8-apple-30.png" class="w-[40px] rounded bg-[#F2F3F4] p-2" alt="apple logo">
+            <img src="./icons/icons8-android-50.png" class="w-[40px] rounded bg-[#F2F3F4] p-2" alt="android logo">
+            <img src="./icons/icons8-ios-50.png" class="w-[40px] rounded bg-[#F2F3F4] p-2" alt="ios logo">
+            <img src="./icons/icons8-linux-50.png" class="w-[40px] rounded bg-[#F2F3F4] p-2" alt="linux logo">
+            <img src="./icons/icons8-router-48.png" class="w-[40px] rounded bg-[#F2F3F4] p-2" alt="router logo">
+          </div>
+
+          <a href="">
+            <p class="underline text-secondaryColor">See all apps ></p>
+          </a>
+
+          <input type="button" value="Get ExpressVPN" class="py-3 px-[30px] font-bold bg-secondaryColor text-[#FFFFFF] hover:bg-btnHoverColor hover:text-[#000000] ease-in-out duration-300 rounded-3xl w-fit cursor-pointer">
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- advantages section -->
+    <section class="mt-[20px] md:mt-[50px]">
+
+      <div class="flex flex-col md:flex-row items-center justify-center gap-[20px] md:gap-[50px] p-5">
+
+        <div class="flex flex-col items-center">
+          <img src="./images/serious-security.png" class="h-[100px] rounded-full" alt="data protection image">
+          <h3 class="font-bold text-center text-lg">Strong data <br class="hidden md:flex">protection</h3>
+          <p class="text-[14px] font-medium text-center">Take change of your online privacy and <br>security with best in class encryption.</p>
+        </div>
+        
+        <div class="flex flex-col items-center">
+          <img src="./images/home-location.png" class="h-[100px] rounded-full" alt="data protection image">
+          <h3 class="font-bold text-center text-lg">Work seamlessly <br class="hidden md:flex">everywhere</h3>
+          <p class="text-[14px] font-medium text-center">Experience the internet the way it's meant to <br>be. One the go, or on your couch.</p>
+        </div>
+        
+        <div class="flex flex-col items-center">
+          <img src="./images/blazing-fast-speeds.png" class="h-[100px] rounded-full" alt="data protection image">
+          <h3 class="font-bold text-center text-lg">Lightning-quick <br class="hidden md:flex">connectivity</h3>
+          <p class="text-[14px] font-medium text-center">Our vpn network is built for speed, powered <br>by next-generation technology.</p>
+        </div>
+
+      </div>
+
+      <a href="">
+        <p class="underline text-secondaryColor text-center mt-[20px] hover:text-btnHoverColor">See more advantages ></p>
+      </a>
+
+    </section>
+
+  </main>
+
+  <!-- footer element -->
+  <footer class="bg-[#FDF3F4]">
+    <div class=" mt-[20px] md:mt-[50px] py-[20px]">
+
+      <p class="text-center font-bold text-[20px]">Ultra-fast servers around the globe</p>
+
+      <div class="flex flex-row items-center justify-center gap-5">
+        <img src="./images/worldmap.png" class="relative" alt="">
+        <div class="flex flex-row md:flex-col items-center justify-center gap-3 md:gap-5 absolute md:relative">
+          <span>
+            <p class="font-medium text-5xl heading">160</p>
+            <p class="font-bold text-[#111]">locations</p>
+          </span>
+          <span>
+            <p class="font-medium text-5xl heading">94</p>
+            <p class="font-bold text-[#111]">countries</p>
+          </span>
+          <span>
+            <img src="./icons/icons8-infinity-symbol-60.png" class="" alt="">
+            <p class="font-bold text-[#111]">unlimited <br>bandwidth</p>
+          </span>
+        </div>
+      </div>
+
+      <a href="">
+        <p class="underline text-secondaryColor text-center mt-[20px] hover:text-btnHoverColor">See our full list of VPN server location></p>
+      </a>
+
+    </div>
+  </footer>
+  
+  <script src="./script/main.js"></script>
+</body>
+</html>
